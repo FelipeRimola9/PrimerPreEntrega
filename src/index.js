@@ -1,13 +1,32 @@
+/*##############
+Importaciones
+##############*/
+
+//Modulos
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+//Estilos
 import './index.css';
-import App from './App';
+//Componentes
+// import App from './App';
+import NavBar from './components/navbar/NavBar';
+import ItemListContainer from './components/itemListContainer/ItemListContainer';
+import Footer from './components/footer/Footer';
+//Core
 import reportWebVitals from './reportWebVitals';
 
+/*##############
+Lógica
+##############*/
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <NavBar
+    saludo="Hola"
+    />
+<ItemListContainer greeting = "Hola mundo"/>
+<Footer/>
   </React.StrictMode>
 );
 
